@@ -8,13 +8,15 @@ sudo apt-get update && sudo apt-get install zsh
 
 ### Install Oh-my-zsh
 ```
-wget –no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O – | sh 
+wget –no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O ~/.zshrc | sh 
 ```
+> **Note:** Git should be pre-installed for above commands.
 
 ### Make ZSH default shell
 ```
 chsh -s /bin/zsh
 ```
+> Now **logout and login** again to see changes.
 
 ### Change theme name in ~/.zshrc 
 ```
