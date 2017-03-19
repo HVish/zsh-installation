@@ -15,8 +15,8 @@ wget –no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/maste
 ### Make ZSH default shell
 ```
 chsh -s /bin/zsh
+source ~/.zshrc
 ```
-> Now **logout and login** again to see changes.
 
 ### Change theme name in ~/.zshrc 
 ```
@@ -29,4 +29,8 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
 sudo mv PowerlineSymbols.otf /usr/share/fonts/
 sudo fc-cache -vf
 sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+```
+### Reload .zshrc to see changes
+```
+source ~/.zshrc
 ```
