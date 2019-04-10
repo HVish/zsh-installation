@@ -7,15 +7,14 @@ sudo apt-get update && sudo apt-get install zsh
 ```
 
 ### Install Oh-my-zsh
+**Note:** Git should be pre-installed for following commands.
 ```
 wget –no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O ~/.zshrc | sh 
 ```
-> **Note:** Git should be pre-installed for above commands.
 
 ### Make ZSH default shell
 ```
 chsh -s /bin/zsh
-source ~/.zshrc
 ```
 
 ### Change theme name in ~/.zshrc 
@@ -34,3 +33,14 @@ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 ```
 source ~/.zshrc
 ```
+If above command doesn't work then logout and login again.
+
+### VSCode integrated terminal font issues:
+If you are using Ubuntu then add following settings to vscode
+```json
+{
+    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'PowerlineSymbols'",
+    "terminal.integrated.fontSize": 16
+}
+```
+You can refer to: https://github.com/oh-my-fish/theme-bobthefish/issues/125
