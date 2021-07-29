@@ -39,7 +39,8 @@ If above command doesn't work then logout and login again.
 If you are using Ubuntu then add following settings to vscode
 ```json
 {
-    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'PowerlineSymbols'",
+    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'PowerlineSymbols'", // "'Ubuntu Mono derivative Powerline'" for mac osx
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.fontSize": 16
 }
 ```
