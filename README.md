@@ -22,6 +22,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ### Make ZSH default shell
 ```
 chsh -s /bin/zsh
+# OR
+sudo chsh -s $(which zsh) $(whoami) # useful when logged in with a user having no password
 ```
 
 ### Change theme name in ~/.zshrc 
